@@ -36,11 +36,18 @@ body {
   }
 }
 header, footer {
-  background: #333;
-  color: rgb(255, 255, 255);
+  background: rgba(51, 51, 51, 0.85);
+  color: #fff;
   padding: 20px;
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 section {
   padding: 20px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
 }
