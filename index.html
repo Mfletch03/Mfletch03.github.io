@@ -2,51 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Matthew Fletcher | Portfolio</title>
-</head>
-<body>
   <style>
     body {
-      background-image: url('Images/background.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: 1.25rem;
+      color: #fff;
       text-align: center;
-      color: #ffffff;
-      font-size: x-large;
-      /* You can change #ffffff to any color you like */
+      background: url('Images/background.gif') center/cover no-repeat;
     }
-    a, a:visited, a:hover, a:active {
-      color: #ffffff;
+
+    a {
+      color: inherit;
       text-decoration: underline;
+      transition: opacity 0.2s ease-in-out;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 1.5rem;
+    }
+
+    h1, h2, p {
+      margin: 0.5rem 0;
+    }
+
+    hr {
+      width: 60%;
+      border: 0;
+      height: 1px;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 2rem auto;
+    }
+
+    footer {
+      font-size: 1rem;
+      opacity: 0.8;
+      margin-bottom: 2rem;
     }
   </style>
+</head>
+<body>
+  <header>
+    <h1>Matthew Fletcher</h1>
+    <p>My coding portfolio!</p>
+  </header>
 
-  <h1>Matthew Fletcher</h1>
-  <p>My coding portfolio!</p>
+  <main>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Project 1:</strong> My Awesome App  
+          <br>
+          <a href="https://github.com/yourusername/project1" target="_blank">GitHub Link</a>
+        </li>
+        <li>
+          <strong>Project 2:</strong> Another Cool Project  
+          <br>
+          <a href="https://github.com/yourusername/project2" target="_blank">GitHub Link</a>
+        </li>
+      </ul>
+    </section>
 
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>Project 1:</strong> My Awesome App  
-      <br>
-      <a href="https://github.com/yourusername/project1">GitHub Link</a>
-    </li>
-    <li>
-      <strong>Project 2:</strong> Another Cool Project  
-      <br>
-      <a href="https://github.com/yourusername/project2">GitHub Link</a>
-    </li>
-  </ul>
+    <section>
+      <h2>About Me</h2>
+      <p>I am a junior Computer Science student at the University of Connecticut.</p>
+    </section>
 
-  <h2>About Me</h2>
-  <p>I am junior Computer Science student at the University of Connecticut.</p>
-
-  <h2>Contact</h2>
-  <p>Email me at: <a href="mailto:Mfletcher03@live.com">mfletcher03@live.com</a></p>
+    <section>
+      <h2>Contact</h2>
+      <p>Email me at: <a href="mailto:Mfletcher03@live.com">Mfletcher03@live.com</a></p>
+    </section>
+  </main>
 
   <hr>
-  <p>&copy; 2025 Matthew Fletcher</p>
 
+  <footer>
+    &copy; 2025 Matthew Fletcher
+  </footer>
 </body>
 </html>
