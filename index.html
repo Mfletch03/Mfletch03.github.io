@@ -1,56 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Matthew Fletcher | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      font-size: 1.25rem;
-      color: #fff;
-      text-align: center;
-      background: url('Images/background.gif') center/cover no-repeat;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: underline;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-    a:hover {
-      opacity: 0.8;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 1.5rem;
-    }
-
-    h1, h2, p {
-      margin: 0.5rem 0;
-    }
-
-    hr {
-      width: 60%;
-      border: 0;
-      height: 1px;
-      background: rgba(255, 255, 255, 0.3);
-      margin: 2rem auto;
-    }
-
-    footer {
-      font-size: 1rem;
-      opacity: 0.8;
-      margin-bottom: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -59,34 +13,37 @@
   </header>
 
   <main>
-    <section>
+    <section class="projects">
       <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>Project 1:</strong> My Awesome App  
-          <br>
-          <a href="https://github.com/yourusername/project1" target="_blank">GitHub Link</a>
-        </li>
-        <li>
-          <strong>Project 2:</strong> Another Cool Project  
-          <br>
-          <a href="https://github.com/yourusername/project2" target="_blank">GitHub Link</a>
-        </li>
-      </ul>
+      <div class="project-grid">
+        <div class="project-card">
+          <a href="project1.html">
+            <img src="Images/project1-preview.jpg" alt="Flask NewsBoard Preview">
+            <h3>Flask NewsBoard</h3>
+            <p>A Flask-based demo of a real-world Publish–Subscribe system. Users can subscribe to view news posts published by an admin.</p>
+          </a>
+        </div>
+
+        <div class="project-card">
+          <a href="project2.html">
+            <img src="Images/project2-preview.jpg" alt="Preview of Project 2">
+            <h3>Project 2: Another Cool Project</h3>
+            <p>Something interesting I built while learning new skills.</p>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section>
+    <section class="about">
       <h2>About Me</h2>
       <p>I am a junior Computer Science student at the University of Connecticut.</p>
     </section>
 
-    <section>
+    <section class="contact">
       <h2>Contact</h2>
       <p>Email me at: <a href="mailto:Mfletcher03@live.com">Mfletcher03@live.com</a></p>
     </section>
   </main>
-
-  <hr>
 
   <footer>
     &copy; 2025 Matthew Fletcher
