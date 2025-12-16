@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   color: #fff;
   text-align: center;
-  background: url('Images/background.gif') center/cover no-repeat;
+  background: url('../Images/background.gif') center/cover no-repeat;
 }
 
 header {
@@ -20,17 +20,16 @@ a {
 }
 
 .project-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   padding: 1rem;
+  justify-items: center;
 }
 
 .project-card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  width: 250px;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
