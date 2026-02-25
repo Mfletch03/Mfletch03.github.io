@@ -27,17 +27,18 @@
 
     <h2>Project Demo</h2>
     <div class="video-container">
-      <iframe 
-        src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-        title="Flask NewsBoard Demo" 
-        frameborder="0" 
-        allowfullscreen>
-      </iframe>
+      <video controls style="width:60%; border-radius:10px; margin-top:1rem;" preload="metadata">
+        <!-- Preferred, broadly compatible format (add this after converting): -->
+        <source src="Videos/News_board/news_board_video.mp4" type="video/mp4">
+        <!-- Fallback QuickTime file (may not play in all browsers) -->
+        <source src="Videos/News_board/news_board_video.mov" type="video/quicktime">
+        Your browser does not support the video tag. You can <a href="Videos/News_board/news_board_video.mov">download the video</a> instead.
+      </video>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 Matthew Fletcher
+    &copy; 2026 Matthew Fletcher
   </footer>
 </body>
 </html>
