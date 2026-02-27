@@ -8,14 +8,35 @@
 </head>
 <body>
   <header>
+    <nav class="project-nav">
+      <p><strong>Other Projects:</strong></p>
+      <a href="Email_validator.html">Email Validator</a> | <a href="Quiz_app.html">Quiz App</a> | <a href="Bitcoin_mining.html">Bitcoin Mining</a>
+    </nav>
     <h1>Flask NewsBoard</h1>
     <nav>
       <a href="index.html">← Back to Home</a>
+      <p></p>
+      <a href="#demo">Jump to Project Demo ↓</a>
     </nav>
   </header>
 
   <main>
-    <img class="project-img" src="Images/project1-preview.jpg" alt="Flask NewsBoard Screenshot">
+    <!-- slideshow carousel for project screenshots -->
+    <div class="carousel" tabindex="0">
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <div class="slides">
+        <img src="Images/News_Board_Screenshots/login_page.png" class="slide" alt="NewsBoard Screenshot 1">
+        <img src="Images/News_Board_Screenshots/sign_up_page.png" class="slide" alt="NewsBoard Screenshot 2">
+        <img src="Images/News_Board_Screenshots/user_veiw_no_message.png" class="slide" alt="NewsBoard Screenshot 3">
+        <img src="Images/News_Board_Screenshots/admin_page_view.png" class="slide" alt="NewsBoard Screenshot 4">
+        <img src="Images/News_Board_Screenshots/user_list.png" class="slide" alt="NewsBoard Screenshot 5">
+        <img src="Images/News_Board_Screenshots/message_posting.png" class="slide" alt="NewsBoard Screenshot 6">
+        <img src="Images/News_Board_Screenshots/message_user_side.png" class="slide" alt="NewsBoard Screenshot 7">
+        <img src="Images/News_Board_Screenshots/failed_login.png" class="slide" alt="NewsBoard Screenshot 8">
+      </div>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>
+
     <ul>
       <li>Implemented a local Flask web application that simulates a Publish–Subscribe (Pub/Sub) system for a news board platform.</li>
       <li>Users can subscribe to receive updates and view news posts published by an administrator, demonstrating event-driven communication.</li>
@@ -25,10 +46,12 @@
     <p><strong>Technologies used:</strong> HTML, CSS, Python, Flask</p>
 
     <p>
-      🔗 <a href="https://github.com/Mfletch03/Flask_NewsBoard_A_Local_Pub_Sub_System" target="_blank">View on GitHub</a>
+      🔗 <a href="https://github.com/Mfletch03/Flask_NewsBoard_A_Local_Pub_Sub_System" target="_blank">View Source on GitHub</a>
     </p>
 
-    <h2>Project Demo</h2>
+
+
+    <h2 id="demo">Project Demo</h2>
     <div class="video-container">
       <video controls preload="metadata">
         <!-- Preferred, broadly compatible format (add this after converting): -->
@@ -43,5 +66,7 @@
   <footer>
     &copy; 2026 Matthew Fletcher
   </footer>
+
+  <script src="js/carousel.js"></script>
 </body>
 </html>

@@ -14,6 +14,28 @@ h1, h2 {
   margin-bottom: 1rem;
 }
 
+/* make section headings more noticeable */
+h2 {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.5rem 1rem;
+  /* removed background box; use underline instead */
+  background: none;
+  border-radius: 0;
+  display: inline-block;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  height: 3px;
+  background: rgba(255,255,255,0.6);
+  width: 50%;
+  margin: 0.25rem auto 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -32,6 +54,12 @@ a {
   border-radius: 10px;
   padding: 1rem;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* make all cards same size */
+  width: 260px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
@@ -41,6 +69,8 @@ a {
 
 .project-card img {
   width: 100%;
+  height: 140px; /* fixed height to keep cards uniform */
+  object-fit: cover; /* crop rather than stretch */
   border-radius: 8px;
   margin-bottom: 0.5rem;
 }
@@ -74,4 +104,76 @@ ul {
 nav a {
   color: inherit;
   text-decoration: none;
+  background: rgba(255,255,255,0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.2s ease;
 }
+nav a:hover,
+nav a:focus {
+  background: rgba(255,255,255,0.4);
+}
+
+/* project navigation links */
+.project-nav {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.project-nav p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.project-nav a {
+  font-size: 0.9rem;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  transition: color 0.2s ease;
+}
+
+.project-nav a:hover,
+.project-nav a:focus {
+  color: #ffeb3b;
+  text-decoration: underline;
+}
+
+
+/* carousel slideshow styles */
+.carousel {
+  position: relative;
+  /* reduce width so screenshots appear smaller (adjust percentage as needed) */
+  max-width: 30%;
+  max-height: 400px;
+  margin: 1rem auto;
+  overflow: hidden;
+  outline: none;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+.slide {
+  min-width: 100%;
+  display: block;
+  /* allow internal scaling to fit container and add a bit of padding */
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 10;
+}
+.carousel .prev { left: 0; }
+.carousel .next { right: 0; }

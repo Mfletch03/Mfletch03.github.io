@@ -8,19 +8,41 @@
 </head>
 <body>
   <header>
+    <nav class="project-nav">
+      <p><strong>Other Projects:</strong></p>
+      <a href="news_board_project.html">Flask NewsBoard</a> | <a href="Quiz_app.html">Quiz App</a> | <a href="Bitcoin_mining.html">Bitcoin Mining</a>
+    </nav>
     <h1>Email Validation Portal</h1>
     <nav>
       <a href="index.html">← Back to Home</a>
+      <p></p>
+      <a href="#demo">Jump to Project Demo ↓</a>
     </nav>
   </header>
 
   <main>
-    <img class="project-img" src="Images/project2-preview.jpg" alt="Screenshot of Email Validation Portal">
+    <!-- slideshow carousel for project screenshots -->
+    <div class="carousel" tabindex="0">
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <div class="slides">
+        <img src="Images/Email_Validator/home_page.png" class="slide" alt="Email Validator Screenshot 1">
+        <img src="Images/Email_Validator/Email_checker.png" class="slide" alt="Email Validator Screenshot 2">
+        <img src="Images/Email_Validator/good_result.png" class="slide" alt="Email Validator Screenshot 3">
+        <img src="Images/Email_Validator/bad_email.png" class="slide" alt="Email Validator Screenshot 4">
+        <img src="Images/Email_Validator/bad_domain.png" class="slide" alt="Email Validator Screenshot 5">
+        <img src="Images/Email_Validator/password_check.png" class="slide" alt="Email Validator Screenshot 6">
+        <img src="Images/Email_Validator/strong_password.png" class="slide" alt="Email Validator Screenshot 7">
+        <img src="Images/Email_Validator/medium_password.png" class="slide" alt="Email Validator Screenshot 8">
+        <img src="Images/Email_Validator/weak_password.png" class="slide" alt="Email Validator Screenshot 9">
+      </div>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>    
+    
     <p>This project is a Spring Boot web application that validates email addresses using Java Domain MX and it can also checks password strength through a web interface.</p>
     <p><strong>Technologies used:</strong> HTML, Shell, Java, MVN Spring Boot</p>
-    <p><a href="https://github.com/Mfletch03/Email-Valitdation-Portal" target="_blank">View Source on GitHub</a></p>
+    <p> 🔗 <a href="https://github.com/Mfletch03/Email-Valitdation-Portal" target="_blank">View Source on GitHub</a></p>
 
-    <h2>Project Demo</h2>
+    <h2 id="demo">Project Demo</h2>
     <div class="video-container">
       <video controls preload="metadata">
         <!-- Preferred, broadly compatible format (add this after converting): -->
@@ -35,5 +57,8 @@
   <footer>
     &copy; 2026 Matthew Fletcher
   </footer>
+
+  <script src="js/carousel.js"></script>
+
 </body>
 </html>

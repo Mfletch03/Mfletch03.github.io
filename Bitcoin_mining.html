@@ -8,14 +8,33 @@
 </head>
 <body>
   <header>
+    <nav class="project-nav">
+      <p><strong>Other Projects:</strong></p>
+      <a href="news_board_project.html">Flask NewsBoard</a> | <a href="Email_validator.html">Email Validator</a> | <a href="Quiz_app.html">Quiz App</a>
+    </nav>
     <h1>Bitcoin Mining Simulator</h1>
     <nav>
       <a href="index.html">← Back to Home</a>
+      <p></p>
+      <a href="#demo">Jump to Project Demo ↓</a>
     </nav>
   </header>
 
   <main>
-    <img class="project-img" src="Images/project4-preview.jpg" alt="Screenshot of Bitcoin Mining Simulator">
+    <!-- slideshow carousel for project screenshots -->
+    <div class="carousel" tabindex="0">
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <div class="slides">
+        <img src="Images/Bitcoin_mining_simulater/start_up.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 1">
+        <img src="Images/Bitcoin_mining_simulater/starting_mining.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 2">
+        <img src="Images/Bitcoin_mining_simulater/mining.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 3">
+        <img src="Images/Bitcoin_mining_simulater/resualt.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 4">
+        <img src="Images/Bitcoin_mining_simulater/stoping.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 5">
+        <img src="Images/Bitcoin_mining_simulater/clean_up.png" class="slide" alt="Bitcoin Mining Simulator Screenshot 6">
+      </div>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>
+    
     <ul>
       <li>This is a simulation of Bitcoin mining using Python and Docker. It demonstrates how mining works in a simplified environment.</li>
       <li>The simulator includes a basic implementation of the Proof of Work algorithm along with a simple blockchain structure.</li>
@@ -24,9 +43,9 @@
       <li>To make sure that the simulation is a realistic representation of Bitcoin mining, it includes proper hashing and difficulty adjustment mechanisms, and uses Python library Threading for concurrent mining operations.</li>
     </ul>
     <p><strong>Technologies used:</strong> Python, Docker</p>
-    <p><a href="https://github.com/Mfletch03/Docker_Bitcoin_miner_simulator" target="_blank">View Source on GitHub</a></p>
+    <p> 🔗 <a href="https://github.com/Mfletch03/Docker_Bitcoin_miner_simulator" target="_blank">View Source on GitHub</a></p>
 
-   <h2>Project Demo</h2>
+   <h2 id="demo">Project Demo</h2>
     <div class="video-container">
       <video controls preload="metadata">
         <!-- Preferred, broadly compatible format (add this after converting): -->
@@ -41,5 +60,7 @@
   <footer>
     &copy; 2026 Matthew Fletcher
   </footer>
+
+  <script src="js/carousel.js"></script>
 </body>
 </html>

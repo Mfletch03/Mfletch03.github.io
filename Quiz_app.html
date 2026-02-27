@@ -8,16 +8,36 @@
 </head>
 <body>
   <header>
+    <nav class="project-nav">
+      <p><strong>Other Projects:</strong></p>
+      <a href="news_board_project.html">Flask NewsBoard</a> | <a href="Email_validator.html">Email Validator</a> | <a href="Bitcoin_mining.html">Bitcoin Mining</a>
+    </nav>
     <h1>Quiz App</h1>
     <nav>
       <a href="index.html">← Back to Home</a>
+      <p></p>
+      <a href="#demo">Jump to Project Demo ↓</a>
     </nav>
   </header>
 
-  <main>
-    <img class="project-img" src="Images/project3-preview.jpg" alt="Screenshot of Quiz App">
+   <main>
+    <!-- slideshow carousel for project screenshots -->
+    <div class="carousel" tabindex="0">
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <div class="slides">
+        <img src="Images/Quiz App/login_page.png" class="slide" alt="Quiz App Screenshot 1">
+        <img src="Images/Quiz App/create_account.png" class="slide" alt="Quiz App Screenshot 2">
+        <img src="Images/Quiz App/Home_page.png" class="slide" alt="Quiz App Screenshot 3">
+        <img src="Images/Quiz App/quiz_topics.png" class="slide" alt="Quiz App Screenshot 4">
+        <img src="Images/Quiz App/example_quiz.png" class="slide" alt="Quiz App Screenshot 5">
+        <img src="Images/Quiz App/example_Results.png" class="slide" alt="Quiz App Screenshot 6">
+        <img src="Images/Quiz App/quiz_history.png" class="slide" alt="Quiz App Screenshot 7">      </div>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>
+    
     <p>This quiz app allows users to test their knowledge in various subjects.</p>
-      <p><strong>Features:</strong></p>
+  
+    <p><strong>Features:</strong></p>
       <ul>
         <li>account creation and login system for personalized quiz experiences.</li>
         <li>Interactive quizzes with multiple-choice questions.</li>
@@ -26,9 +46,9 @@
         <li>A MySQL database to store quiz data and user scores for persistent tracking.</li>
       </ul>
       <p><strong>Technologies used:</strong> HTML, CSS, JavaScript, MySQL</p>
-      <p><a href="https://github.com/Mfletch03/Quiz_app" target="_blank">View Source on GitHub</a></p>
+      <p> 🔗 <a href="https://github.com/Mfletch03/Quiz_app" target="_blank">View Source on GitHub</a></p>
 
-    <h2>Project Demo</h2>
+    <h2 id="demo">Project Demo</h2>
     <div class="video-container">
       <video controls preload="metadata">
         <!-- Preferred, broadly compatible format (add this after converting): -->
@@ -43,5 +63,7 @@
   <footer>
     &copy; 2026 Matthew Fletcher
   </footer>
+
+  <script src="js/carousel.js"></script>
 </body>
 </html>
